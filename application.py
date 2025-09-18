@@ -8,8 +8,8 @@ application = Flask(__name__)
 app = application
 
 ## import regressor model and standard scaler pickle.
-regessor_model = pickle.load(open(r"models\regressor.pkl","rb")) #"models\regressor.pkl" cause Invalid argument: because of escape characters. 
-standard_scaler = pickle.load(open(r"models\scaler.pkl","rb"))
+regessor_model = pickle.load(open("models/regressor.pkl","rb")) #"models\regressor.pkl" cause Invalid argument: because of escape characters. 
+standard_scaler = pickle.load(open("models/scaler.pkl","rb"))
 
 ## Route for home page. 
 @app.route("/")
